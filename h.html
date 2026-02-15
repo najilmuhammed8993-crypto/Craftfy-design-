@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craftfy Design | Creative Studio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        * { box-sizing: border-box; scroll-behavior: smooth; }
+        body { font-family: 'Manjari', sans-serif; margin: 0; background-color: #ffffff; color: #333; }
+        
+        /* Navigation */
+        nav { background: white; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .logo-container { display: flex; align-items: center; }
+        .logo-img { height: 50px; margin-right: 12px; border-radius: 5px; }
+        .brand-name { font-size: 22px; font-weight: bold; color: #000; letter-spacing: 1px; font-family: sans-serif; }
+        nav a { color: #555; text-decoration: none; margin-left: 20px; font-weight: 600; font-size: 14px; }
+
+        /* Hero Section */
+        .hero { background: linear-gradient(135deg, #32d0c6 0%, #2980b9 100%); color: white; height: 500px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px; }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; font-family: sans-serif; }
+        .hero p { font-size: 1.4rem; margin-bottom: 30px; opacity: 0.9; }
+        
+        /* Button */
+        .btn { background: #000; color: white; padding: 15px 35px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-flex; align-items: center; gap: 10px; transition: 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        .btn:hover { background: #333; transform: scale(1.05); }
+
+        /* Services */
+        .container { max-width: 1100px; margin: 60px auto; padding: 20px; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .card { background: #f9f9f9; padding: 30px; border-radius: 15px; text-align: center; border: 1px solid #eee; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .card h3 { color: #2980b9; margin-bottom: 10px; }
+
+        /* Footer */
+        footer { background: #111; color: white; text-align: center; padding: 50px 20px; }
+        .social-links { margin-top: 20px; display: flex; justify-content: center; gap: 20px; }
+        .social-links a { color: white; font-size: 24px; transition: 0.3s; }
+        .social-links a:hover { color: #32d0c6; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <img src="https://i.ibb.co/v6C0Xm3/1000023636.webp" alt="Craftfy Logo" class="logo-img">
+            <span class="brand-name">CRAFTFY DESIGN</span>
+        </div>
+        <div>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Crafting Your Ideas</h1>
+        <p>ക്രിയേറ്റീവ് ആയ ഡിസൈനുകളിലൂടെ നിങ്ങളുടെ ബിസിനസ്സിനെ വേറിട്ടു നിർത്തൂ.</p>
+        <a href="https://wa.me/916238044001" target="_blank" class="btn">
+            <i class="fab fa-whatsapp"></i> Start a Project
+        </a>
+    </section>
+
+    <div class="container" id="services">
+        <div class="services-grid">
+            <div class="card">
+                <h3>Logo Design</h3>
+                <p>നിങ്ങളുടെ ബ്രാൻഡിന്റെ മുഖമുദ്രയായ മികച്ച ലോഗോകൾ.</p>
+            </div>
+            <div class="card">
+                <h3>Social Media Ads</h3>
+                <p>ശ്രദ്ധിക്കപ്പെടുന്ന പോസ്റ്ററുകളും പരസ്യങ്ങളും.</p>
+            </div>
+            <div class="card">
+                <h3>Branding</h3>
+                <p>ബിസിനസ്സിന് ഒരു പ്രൊഫഷണൽ ഐഡന്റിറ്റി നൽകുന്നു.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <h2>Let's Work Together</h2>
+        <p>WhatsApp: +91 62380 44001</p>
+        <div class="social-links">
+            <a href="https://wa.me/916238044001" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/craftfy_designs" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p style="margin-top: 30px; font-size: 12px; color: #666;">&copy; 2026 Craftfy Design.</p>
+    </footer>
+
+</body>
+</html>
